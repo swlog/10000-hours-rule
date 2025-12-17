@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* 전체 배경 */
+.wrapper {
+  min-height: 100vh;
+  background-color: #5a2d82;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* 중앙 영역 */
+.container {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+/* 제목 */
+.title {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+/* 부제 */
+.subtitle {
+  margin-bottom: 30px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* 입력 영역 */
+.input-box p {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 120px;
+  padding: 5px;
+  margin: 0 5px;
+}
+
+/* 메인 버튼 */
+.main-btn {
+  margin: 30px 0;
+  padding: 12px 20px;
+  background-color: #ffeb00;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* 결과 텍스트 */
+.result-text {
+  margin: 30px 0;
+  font-size: 16px;
+}
+
+/* 하단 버튼 */
+.bottom-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.start-btn {
+  background-color: #ffeb00;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.share-btn {
+  background-color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 28px;
+  }
+
+  input {
+    width: 90px;
+  }
+
+  .bottom-buttons {
+    flex-direction: column;
+  }
+
+  .main-btn {
+    font-size: 14px;
+  }
+}

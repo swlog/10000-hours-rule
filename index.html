@@ -1,19 +1,84 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8" />
-  <title>1만 시간의 법칙</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>1만 시간의 법칙</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <script src="js/modal.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="tit">
+          <img src="img/title.png" alt="1만 시간의 법칙" />
+        </h1>
+        <p class="desc">"연습은 어제의 당신보다 당신을 더 낫게 만든다."</p>
+      </header>
 
-    <section class="content">
-        <header>
-        <img src="images/title.png" class="title" alt="1만 시간의 법칙 타이틀 ">
+      <main>
+        <section class="info">
+          <img src="img/quotes.png" alt="인용구" />
+          <p class="info-txt">
+            <strong>1만 시간의 법칙</strong>은<br />
+            어떤 분야의 전문가가 되기 위해서는<br />
+            최소한 1만 시간의 훈련이 필요하다는 법칙이다.
+          </p>
+        </section>
 
-        </header>
+        <section class="calc">
+          <form class="calc-form">
+            <p class="input-line">
+              나는
+              <input type="text" placeholder="예)프로그래밍" />
+              전문가가 될 것이다.
+            </p>
 
-</body>
+            <p class="input-line">
+              그래서 앞으로 매일 하루에
+              <input type="number" placeholder="예)5" />
+              시간씩 훈련할 것이다.
+            </p>
+
+            <div class="btn-wrap">
+              <button type="submit" class="btn-calc">
+                나는 며칠 동안 훈련을 해야 1만 시간이 될까?
+              </button>
+              <img src="img/icon.png" alt="클릭" />
+            </div>
+          </form>
+        </section>
+
+        <section class="result">
+          <p>
+            당신은 <strong class="res-f">프로그래밍</strong> 전문가가 되기 위해서
+          </p>
+          <p>
+            대략 <strong class="res-t">5110</strong>일 이상 훈련하셔야 합니다! :)
+          </p>
+        </section>
+
+        <div class="action-btns">
+          <button type="button" class="btn-go">훈련하러 가기 GO! GO!</button>
+          <button type="button" class="btn-share">공유하기</button>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <img src="img/logo.png" alt="위니브 로고" />
+        <p class="copy">
+          본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 위니브에 있습니다.<br />
+          수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
+        </p>
+      </footer>
+
+      <dialog class="modal">
+        <p class="modal-txt1">화이팅!!</p>
+        <p class="modal-txt2">당신의 꿈을 응원합니다!</p>
+        <img src="img/licat.png" alt="라이캣" />
+        <button type="button" class="btn-close">
+          종료하고 진짜 훈련하러 가기 GO!GO!
+        </button>
+      </dialog>
+    </div>
+  </body>
 </html>
-
-

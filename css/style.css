@@ -1,0 +1,305 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Sans+KR:wght@400;600;700&display=swap');
+
+
+:root {
+  --bg: #18181B;          
+  --surface: #27272A;     
+  --point: #F472B6;       
+  --text-main: #FAFAFA;  
+  --text-sub: #A1A1AA;    
+  --shadow: rgba(0, 0, 0, 0.35);
+}
+
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text-main);
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+
+.container {
+  min-height: 100vh;
+  max-width: 78rem;
+  margin: 0 auto;
+  padding: 11rem 2rem 5.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8rem;
+  text-align: center;
+}
+
+.header .tit {
+  width: fit-content;
+  margin-bottom: 4rem;
+}
+
+.header .tit img {
+  display: block;
+  margin: 0 auto;
+}
+
+.header .desc {
+  font-family: 'Gowun Dodum', cursive;
+  font-size: 3.2rem;
+  line-height: 1.5;
+  color: var(--point);
+}
+
+
+.info {
+  position: relative;
+  text-align: center;
+  margin-bottom: 10rem;
+}
+
+.info img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.25;
+}
+
+.info-txt {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  color: var(--text-sub);
+}
+
+.info-txt strong {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+
+.calc-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.8rem;
+  margin-bottom: 10rem;
+}
+
+.input-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+  font-size: 2.4rem;
+}
+
+.input-line input {
+  width: 22rem;
+  height: 5.6rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--surface);
+  color: var(--text-main);
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.input-line input::placeholder {
+  color: var(--text-sub);
+}
+
+
+.btn-wrap {
+  position: relative;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-calc {
+  padding: 1.6rem 3.2rem;
+  border-radius: 1.2rem;
+  background-color: var(--point);
+  color: #3F0D26;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  box-shadow: 0 8px 24px var(--shadow);
+}
+
+.btn-wrap img {
+  position: absolute;
+  right: -7.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6.4rem;
+  opacity: 0.85;
+  filter: drop-shadow(0 4px 8px var(--shadow));
+}
+
+
+.result {
+  text-align: center;
+  margin-bottom: 10rem;
+}
+
+.result p {
+  font-size: 2.4rem;
+  line-height: 1.4;
+  color: var(--text-sub);
+}
+
+.res-f {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.res-t {
+  font-family: 'Gowun Dodum', cursive;
+  font-size: 7.2rem;
+  color: var(--point);
+  padding: 0 1.2rem;
+}
+
+
+.action-btns {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 10rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.action-btns button {
+  height: 6.4rem;
+  border-radius: 1.2rem;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  box-shadow: 0 8px 24px var(--shadow);
+}
+
+.btn-go {
+  width: 36rem;
+  background-color: var(--point);
+  color: #3F0D26;
+}
+
+.btn-share {
+  width: 19rem;
+  background-color: var(--surface);
+  color: var(--text-main);
+}
+
+
+.footer {
+  text-align: center;
+}
+
+.footer img {
+  width: 16.8rem;
+  margin-bottom: 2rem;
+}
+
+.footer .copy {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--text-sub);
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+.modal {
+  border: none;
+  border-radius: 20px;
+  padding: 32px 24px 28px;
+  background-color: #ffffff;
+  width: 360px;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+.modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+
+.modal-txt1 {
+  font-family: 'Gowun Dodum', cursive;
+  font-size: 28px;
+  color: #5B2386;
+  margin-bottom: 8px;
+}
+
+.modal-txt2 {
+  font-family: 'Gowun Dodum', cursive;
+  font-size: 14px;
+  color: #5B2386;
+  margin-bottom: 20px;
+}
+
+
+.modal img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 24px;
+}
+
+
+.btn-close {
+  width: 100%;
+  height: 48px;
+  background-color: #F5DF4D;
+  border-radius: 10px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #3F0D26;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-close:hover {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 9px;
+  }
+
+  .header .desc {
+    font-size: 2.2rem;
+  }
+
+  .btn-wrap img {
+    display: none; 
+  }
+
+  .res-t {
+    font-size: 3.6rem;
+  }
+}
